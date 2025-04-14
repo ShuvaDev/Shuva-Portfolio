@@ -9,8 +9,8 @@ import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Arnnik Islam Payel - Web Developer & Tech Enthusiast',
-    template: '%s | Arnnik Islam Payel'
+    default: 'S.R. Shuva Dev - Full stack ASP.NET developer',
+    template: '%s | S.R. Shuva Dev'
   },
   description: 'Portfolio of Arnnik Islam Payel - Web Developer, Wi-Fi Pentester, and Tech Content Creator. Explore my projects, skills, and professional journey.',
   keywords: ['Arnnik Islam Payel', 'Web Developer', 'Wi-Fi Pentester', 'Tech Content Creator', 'Portfolio', 'Web Development', 'Cybersecurity', 'React', 'Next.js'],

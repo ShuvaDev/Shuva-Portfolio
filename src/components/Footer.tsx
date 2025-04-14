@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaYoutube, FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaReddit, FaGithub, FaArrowUp, FaCertificate, FaHeart } from 'react-icons/fa';
+import { FaYoutube, FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaReddit, FaGithub, FaArrowUp, FaCertificate, FaHeart, FaMediumM } from 'react-icons/fa';
 import { HiMail, HiLocationMarker, HiExternalLink } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { personalInfo } from '@/data/personalInfo';
@@ -28,10 +28,8 @@ export default function Footer() {
     { name: 'YouTube', icon: <FaYoutube size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'YouTube')?.url || '#' },
     { name: 'Facebook', icon: <FaFacebook size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'Facebook')?.url || '#' },
     { name: 'LinkedIn', icon: <FaLinkedin size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'LinkedIn')?.url || '#' },
-    { name: 'Instagram', icon: <FaInstagram size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'Instagram')?.url || '#' },
-    { name: 'Twitter', icon: <FaTwitter size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'Twitter')?.url || '#' },
-    { name: 'Reddit', icon: <FaReddit size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'Reddit')?.url || '#' },
     { name: 'GitHub', icon: <FaGithub size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'GitHub')?.url || '#' },
+    { name: 'Medium', icon: <FaMediumM size={20} />, url: personalInfo.socialLinks.find(link => link.name === 'Medium')?.url || '#' }
   ];
 
   const containerVariants = {
@@ -258,21 +256,9 @@ export default function Footer() {
         </div>
         
         {/* Bottom copyright section */}
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-center pt-8">
             © {currentYear} {personalInfo.name}. All rights reserved.
           </p>
-          
-          <p className="mt-4 md:mt-0 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
-            <motion.span 
-              whileHover={{ scale: 1.2, rotate: 10 }}
-              className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white"
-            >
-              <FaHeart size={12} />
-            </motion.span>
-            Made with passion using Next.js & Tailwind CSS
-          </p>
-        </div>
       </div>
     </footer>
   );

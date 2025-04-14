@@ -77,7 +77,7 @@ export default function Navbar() {
                 />
               </div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent group-hover:from-accent group-hover:to-primary transition-all duration-500">
-                Arnnik Islam
+                Shuva Dev
               </h1>
             </Link>
           </motion.div>
